@@ -29,8 +29,8 @@ img {
 .brand {
   font-size: 34px;
   font-weight: bold;
-  margin-top: 40px;
-  margin-bottom: 25px;
+  margin-top: 45px;
+  margin-bottom: 15px;
   margin-left: 5px;
 }
 
@@ -44,8 +44,8 @@ img {
 }
 
 .right-container p:last-child {
-  margin-top: 20px;
-  margin-bottom: 12px;
+  margin-top: 15px;
+  margin-bottom: 8px;
 }
 
 .separator {
@@ -64,11 +64,48 @@ form {
 label {
   font-size: 14px;
   display: block;
+  margin-bottom: 2px;
+}
+
+input {
+  margin-bottom: 8px;
+  width: 80%;
 }
 
 
+.form-container > p {
+  font-size: 14px;
+}
+
+button {
+  background-color: #35a8d4;
+  padding: 8px 22px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 14px;
+}
+
+button:hover {
+  background-color: #2896bd;
+}
+
+button:active {
+  background-color: #1b647e;
+}
+
+.form-inner-container {
+  margin-bottom: 16px;
+}
 
 
+.login {
+  color: #1b647e;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 
 
