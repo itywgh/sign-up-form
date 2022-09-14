@@ -3,49 +3,58 @@
   <head>
     <title>Sign-up Form</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./styles.css" rel="stylesheet">
   </head>
   <body>
-    <div class="left-container">
-      <p class="brand">ARCHSIDE</p> 
-      <p>Photo by <a class="credit" href="https://unsplash.com/@sonderquest">Sonder
-       Quest</a> on <a class="credit" ="https://unsplash.com">Unsplash</a></p> 
+    <div class="container">
+      <div class="left-container">
+        <img src="./squ.jpg" alt="building with curves">
+        <p class="brand">ARCHSIDE</p> 
+        <p class="credit-p">Photo by <a class="credit" href="https://unsplash.com/@sonderquest">Sonder
+         Quest</a> on <a class="credit" ="https://unsplash.com">Unsplash</a></p> 
+      </div>
+      <div class="right-container">
+          <p>This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams.<br>
+          Sign up <span class="italic">now</span> to get started.</p>
+          <p>You <span class="italic">know</span> you want to.</p>
+      </div>
+
+      <div class="separator">
+      </div>
+
+      <div class="form-container">
+        <h4>Let's do this!</h4>
+        <form action="#" method="get">
+          <div class="form-inner-container">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" name="fname" id="first-name">
+
+            <label for="last-name">LAST NAME</label>
+            <input type="text" name="lname" id="last-name">
+
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email">
+
+            <label for="phone">PHONE NUMBER</label>
+            <input type="tel" name="phone" id="phone">
+
+            <label for="pwd1">PASSWORD</label>
+            <input type="password" name="password1" id="pwd1">
+
+            <label for="pwd2">CONFIRM PASSWORD</label>
+            <input type="password" name="password2" id="pwd2">
+          </div>
+          
+          <div class="separator">
+          </div>
+
+          <button type="submit">Create Account</button>
+        </form>
+        <p>Already have an account? <a class="login" href="#">Log in</a></p>
+      </div>
     </div>
-    <div class="right-container">
-        <p>This is not a real online service! You know you need something like
-        this in your life to help you realize your deepest dreams.<br>
-        Sign up <span class="now">now</span> to get started</p>
-        <p>You <span class="know">know</span> you want to.</p>
-    </div>
-
-    <div class="form-container">
-      <h4>Let's do this!</h4>
-      <form action="#" method="get">
-        <div class="form-inner-container">
-          <label for="first-name">FIRST NAME</label>
-          <input type="text" name="fname" id="first-name">
-
-          <label for="last-name">FIRST NAME</label>
-          <input type="text" name="lname" id="last-name">
-
-          <label for="email">EMAIL</label>
-          <input type="email" name="email" id="email">
-
-          <label for="phone">PHONE NUMBER</label>
-          <input type="tel" name="phone" id="phone">
-
-          <label for="pwd1">PASSWORD</label>
-          <input type="password" name="password1" id="pwd1">
-
-          <label for="pwd2">CONFIRM PASSWORD</label>
-          <input type="password" name="password2" id="pwd2">
-        </div>
-        <button type="submit">Create Account</button>
-      </form>
-      <p>Already have an account? <a class="login" href="#">Log in</a></p>
-    </div>
-  
   </body>
   <script type="text/javascript" src="./index.js"></script>
 </html>
