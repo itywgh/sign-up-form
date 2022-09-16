@@ -127,18 +127,33 @@ button:active {
 
 
 @media only screen and (min-width: 700px) {
+  .left-container {
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+  }
+
   img {
     height: 70px;
-    top: 44px;
+    top: 28px;
   }
 
   .brand {
+    color: #1d1d1d;
     font-size: 2.5rem;
-    background-color: #404243;
-    background-opacity: .15;
+    margin-top: 36px;
+    background-color: rgba(180, 180, 180, .55);
     display: inline-block;
   }
 
+  .form-container {
+    margin-top: 35px;
+    padding: 20px 0;
+  }
+
+  h4 {
+    margin-bottom: 17px;
+  }
 
   .form-inner-container {
     display: grid;
@@ -150,15 +165,13 @@ button:active {
 
   .form-inner-container div > input {
     width: 100%;
+    margin-bottom: 14px;
   }
 
-  .form-container {
-    margin-top: 35px;
-    padding: 20px 0;
-  }
 
   button {
     margin-bottom: 15px;
+    padding: 12px 1.8rem;
   }
 
 
