@@ -64,7 +64,7 @@ label {
 }
 
 input {
-  margin-bottom: 8px;
+  margin-bottom: 45px;
   width: 80%;
   padding: 3px 6px;
   border-radius: 3px;
@@ -94,10 +94,6 @@ input:focus:valid {
   border-top: 1px solid #33a8d3;
 }
 
-.form-container > p {
-  font-size: .85rem;
-  margin-bottom: 10px;
-}
 
 button {
   background-color: #35a8d4;
@@ -131,9 +127,24 @@ button:active {
   font-weight: bold;
 }
 
+.relative-div {
+  position: relative;
+}
+
+#first-name-error,
+#last-name-error,
+#email-error,
+#phone-error,
+#pwd-error,
+#pwd2-error  {
+  position: absolute;
+  top: 55px;
+  left: 0px;
+}
 
 .error {
-  font-size: .65rem;
+  font-size: 10px;
+  font-weight: bold;
   color: rgb(255, 71, 96);
 }
 
@@ -156,10 +167,25 @@ button:active {
     background-color: rgba(42, 161, 211, .55);
   }
 
+  .button-login-container {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+  }
+
   .form-container {
-    margin-top: 35px;
+    margin-top: 28px;
     padding: 20px 0;
   }
+
+  .login {
+    margin-bottom: 0;
+  }
+
+  .p-login {
+    margin-left: auto;
+  }
+
 
   h4 {
     margin-bottom: 17px;
@@ -168,26 +194,27 @@ button:active {
   .form-inner-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-bottom: 20px;
-    margin-bottom: 25px;
+    padding-bottom: 12px;
+    margin-bottom: 15px;
     column-gap: 5rem;
   }
 
   .form-inner-container div > input {
     width: 100%;
-    margin-bottom: 14px;
+    margin-bottom: 45px;
   }
 
 
   button {
-    margin-bottom: 15px;
+    margin-bottom: 0;
     padding: 12px 1.8rem;
   }
+
 }
 
 
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1100px) {
   .container {
     flex-direction: row;
     width: 100%;
@@ -212,7 +239,7 @@ button:active {
   .brand {
     color: #1d1d1d;
     font-size: 3rem;
-    margin-top: 140px;
+    margin-top: 190px;
     background-color: rgba(56, 173, 211, .55);
     height: fit-content;
     display: inline;
@@ -242,24 +269,35 @@ button:active {
 
   .form-container {
     padding-bottom: 0;
-    padding-top: 40px;
+    padding-top: 20px;
   }
 
   .form-inner-container {
     padding-bottom: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 28px;
   }
 
   .form-inner-container div > input {
     width: min(250px, 90%);
-    margin-bottom: 14px;
+    margin-bottom: 32px;
     font-size: 18px; 
     padding: 5px 8px;
   }
 
   button {
-    margin-bottom: 30px;
     font-size: 18px;
+  }
+
+
+  #first-name-error,
+  #last-name-error,
+  #email-error,
+  #phone-error,
+  #pwd-error,
+  #pwd2-error  {
+    position: absolute;
+    top: 60px;
+    left: 0px;
   }
 }
 

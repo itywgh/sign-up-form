@@ -25,41 +25,46 @@
           <h4>Let's do this!</h4>
           <form action="#" method="get">
             <div class="form-inner-container">
-              <div>
+              <div class="relative-div">
                 <label for="first-name">FIRST NAME</label>
                 <input type="text" name="fname" id="first-name"
                  pattern="\D*" autofocus required>
-                <span class="first-name-error"></span>
+                <span id="first-name-error" class="error"></span>
               </div>
-              <div>
+              <div class="relative-div">
                 <label for="last-name">LAST NAME</label>
                 <input type="text" name="lname" id="last-name" 
                  pattern="\D*" required>
-                <span class="last-name-error"></span>
+                <span id="last-name-error" class="error"></span>
               </div>
-              <div>
+              <div class="relative-div">
                 <label for="email">EMAIL</label>
                 <input type="email" name="email" id="email" required>
-                <span class="email-error"></span>
+                <span id="email-error" class="error"></span>
               </div>
-              <div>
+              <div class="relative-div">
                 <label for="phone">PHONE NUMBER</label>
                 <input type="tel" name="phone" id="phone" required>
-                <span class="phone-error"></span>
+                <span id="phone-error" class="error"></span>
               </div>
-              <div>
+              <div class="relative-div">
                 <label for="pwd1">PASSWORD</label>
-                <input type="password" name="password1" id="pwd1" required>
+                <input type="password" name="password1" id="pwd1"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                <span id="pwd-error" class="error"></span>
               </div>
-              <div>
+              <div class="relative-div">
                 <label for="pwd2">CONFIRM PASSWORD</label>
-                <input type="password" name="password2" id="pwd2" required>
-                <span class="pwd-error"></span>
+                <input type="password" name="password2" id="pwd2"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                <span id="pwd2-error" class="error"></span>
               </div>
             </div>
-            <button type="submit">Create Account</button>
+            <div class="button-login-container">
+              <button type="submit">Create Account</button>
+              <p class="p-login">Already have an account? <a class="login" href="#">Log in</a></p>
+            </div>
           </form>
-          <p>Already have an account? <a class="login" href="#">Log in</a></p>
         </div>
       </div>
     </div>
