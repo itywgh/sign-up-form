@@ -79,8 +79,13 @@ input:focus {
 }
 
 
-input:invalid {
-  border-color: red;
+input:invalid:focus {
+  border-color: rgb(255, 71, 96);
+}
+
+input:focus:valid {
+  border-color: #33a8d3;
+
 }
 
 .form-container {
@@ -127,6 +132,11 @@ button:active {
 }
 
 
+.error {
+  font-size: .65rem;
+  color: rgb(255, 71, 96);
+}
+
 @media only screen and (min-width: 700px) {
   .left-container {
     margin-bottom: 35px;
@@ -143,7 +153,7 @@ button:active {
     color: #1d1d1d;
     font-size: 2.5rem;
     margin-top: 36px;
-    background-color: rgba(180, 180, 180, .55);
+    background-color: rgba(42, 161, 211, .55);
   }
 
   .form-container {
@@ -203,20 +213,31 @@ button:active {
     color: #1d1d1d;
     font-size: 3rem;
     margin-top: 140px;
-    background-color: rgba(180, 180, 180, .55);
+    background-color: rgba(56, 173, 211, .55);
     height: fit-content;
     display: inline;
   }
 
   .credit-p {
+    color: white;
+    font-weight: bold;
     display: block;
-    background-color: rgba(180, 180, 180, .55);
+    background-color: rgba(42, 161, 211, .55);
     position: absolute;
     bottom: 5px;
   }
 
+  .credit {
+    text-decoration: none;
+    color: lightpink;
+  }
+
   .right-container {
     padding: 60px max(5rem, 65px);
+  }
+
+  .desc-container {
+    font-size: 18px;
   }
 
   .form-container {
@@ -232,10 +253,13 @@ button:active {
   .form-inner-container div > input {
     width: min(250px, 90%);
     margin-bottom: 14px;
+    font-size: 18px; 
+    padding: 5px 8px;
   }
 
   button {
-    margin-bottom: 36px;
+    margin-bottom: 30px;
+    font-size: 18px;
   }
 }
 
