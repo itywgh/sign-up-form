@@ -45,7 +45,7 @@ img {
   font-style: italic;
 }
 
-.right-container p:last-child {
+.desc-container p:last-child {
   margin-top: 15px;
   margin-bottom: 8px;
 }
@@ -173,14 +173,16 @@ button:active {
     margin-bottom: 15px;
     padding: 12px 1.8rem;
   }
-
-
-
-
 }
 
 
 
+@media only screen and (min-width: 1000px) {
+  .container {
+    flex-direction: row;
+  }
+
+}
 
 
 
